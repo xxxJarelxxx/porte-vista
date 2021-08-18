@@ -6,8 +6,373 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porte Vista</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <script src="./swiper/swiper-bundle.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="header container">
+            
+            <svg id="logo" width="220" height="36" viewBox="0 0 220 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="59" height="36" fill="white"/>
+                <path d="M11.016 27C10.8427 27 10.704 26.948 10.6 26.844C10.496 26.74 10.444 26.6013 10.444 26.428V9.398C10.444 9.22467 10.496 9.086 10.6 8.982C10.704 8.86067 10.8427 8.8 11.016 8.8H21.156C21.3467 8.8 21.494 8.852 21.598 8.956C21.702 9.06 21.754 9.20733 21.754 9.398V9.788C21.754 9.96133 21.6933 10.1 21.572 10.204C21.468 10.308 21.3293 10.36 21.156 10.36H12.082V16.99H20.584C20.7747 16.99 20.922 17.042 21.026 17.146C21.13 17.25 21.182 17.3973 21.182 17.588V17.978C21.182 18.1513 21.1213 18.29 21 18.394C20.896 18.498 20.7573 18.55 20.584 18.55H12.082V25.44H21.364C21.5547 25.44 21.702 25.492 21.806 25.596C21.91 25.7 21.962 25.8473 21.962 26.038V26.428C21.962 26.6013 21.9013 26.74 21.78 26.844C21.676 26.948 21.5373 27 21.364 27H11.016ZM35.0867 27C34.9481 27 34.8267 26.948 34.7227 26.844C34.6187 26.74 34.5667 26.6187 34.5667 26.48C34.5667 26.3587 34.6014 26.246 34.6707 26.142L40.7287 17.744L34.9047 9.658C34.8354 9.554 34.8007 9.44133 34.8007 9.32C34.8007 9.18133 34.8527 9.06 34.9567 8.956C35.0607 8.852 35.1821 8.8 35.3207 8.8H35.9447C36.1701 8.8 36.3694 8.93 36.5427 9.19L41.7687 16.47L46.8907 9.19C47.0814 8.93 47.2807 8.8 47.4887 8.8H48.0607C48.1994 8.8 48.3207 8.852 48.4247 8.956C48.5287 9.06 48.5807 9.18133 48.5807 9.32C48.5807 9.44133 48.5461 9.554 48.4767 9.658L42.7307 17.796L48.7627 26.142C48.8321 26.246 48.8667 26.3587 48.8667 26.48C48.8667 26.6187 48.8147 26.74 48.7107 26.844C48.6067 26.948 48.4854 27 48.3467 27H47.7227C47.5147 27 47.3154 26.87 47.1247 26.61L41.6907 19.096L36.2567 26.61C36.0834 26.87 35.8841 27 35.6587 27H35.0867Z" fill="#202020"/>
+                <path d="M70.496 19.954C70.3227 19.954 70.184 19.902 70.08 19.798C69.976 19.694 69.924 19.5553 69.924 19.382V19.018C69.924 18.8447 69.976 18.706 70.08 18.602C70.184 18.498 70.3227 18.446 70.496 18.446H80.506C80.6793 18.446 80.818 18.498 80.922 18.602C81.026 18.706 81.078 18.8447 81.078 19.018V19.382C81.078 19.5553 81.026 19.694 80.922 19.798C80.818 19.902 80.6793 19.954 80.506 19.954H70.496ZM96.1933 27C96.02 27 95.8813 26.948 95.7773 26.844C95.6733 26.74 95.6213 26.6013 95.6213 26.428V9.398C95.6213 9.22467 95.6733 9.086 95.7773 8.982C95.8813 8.86067 96.02 8.8 96.1933 8.8H101.731C103.534 8.8 104.955 9.06867 105.995 9.606C107.053 10.126 107.798 10.8973 108.231 11.92C108.682 12.9427 108.925 14.2427 108.959 15.82C108.977 16.34 108.985 17.0247 108.985 17.874C108.985 18.7407 108.977 19.434 108.959 19.954C108.925 21.618 108.682 22.9613 108.231 23.984C107.798 24.9893 107.07 25.7433 106.047 26.246C105.025 26.7487 103.629 27 101.861 27H96.1933ZM101.731 25.44C103.118 25.44 104.21 25.258 105.007 24.894C105.805 24.5127 106.377 23.9233 106.723 23.126C107.087 22.3113 107.287 21.2107 107.321 19.824C107.339 19.304 107.347 18.654 107.347 17.874C107.347 17.1113 107.339 16.47 107.321 15.95C107.287 14.0087 106.827 12.596 105.943 11.712C105.077 10.8107 103.629 10.36 101.601 10.36H97.2593V25.44H101.731ZM129.779 27.26C125.324 27.26 123.036 24.868 122.915 20.084C122.898 19.564 122.889 18.836 122.889 17.9C122.889 16.964 122.898 16.236 122.915 15.716C122.984 13.3587 123.626 11.5733 124.839 10.36C126.052 9.14667 127.699 8.54 129.779 8.54C131.859 8.54 133.506 9.14667 134.719 10.36C135.932 11.5733 136.574 13.3587 136.643 15.716C136.678 16.756 136.695 17.484 136.695 17.9C136.695 18.316 136.678 19.044 136.643 20.084C136.522 24.868 134.234 27.26 129.779 27.26ZM129.779 25.7C131.339 25.7 132.578 25.232 133.497 24.296C134.433 23.3427 134.936 21.8953 135.005 19.954C135.04 18.914 135.057 18.2293 135.057 17.9C135.057 17.5707 135.04 16.886 135.005 15.846C134.936 13.9047 134.433 12.466 133.497 11.53C132.561 10.5767 131.322 10.1 129.779 10.1C128.236 10.1 126.997 10.5767 126.061 11.53C125.125 12.466 124.622 13.9047 124.553 15.846C124.536 16.366 124.527 17.0507 124.527 17.9C124.527 18.7493 124.536 19.434 124.553 19.954C124.622 21.8953 125.116 23.3427 126.035 24.296C126.971 25.232 128.219 25.7 129.779 25.7ZM157.394 27.26C152.939 27.26 150.651 24.868 150.53 20.084C150.513 19.564 150.504 18.836 150.504 17.9C150.504 16.964 150.513 16.236 150.53 15.716C150.599 13.3587 151.241 11.5733 152.454 10.36C153.667 9.14667 155.314 8.54 157.394 8.54C159.474 8.54 161.121 9.14667 162.334 10.36C163.547 11.5733 164.189 13.3587 164.258 15.716C164.293 16.756 164.31 17.484 164.31 17.9C164.31 18.316 164.293 19.044 164.258 20.084C164.137 24.868 161.849 27.26 157.394 27.26ZM157.394 25.7C158.954 25.7 160.193 25.232 161.112 24.296C162.048 23.3427 162.551 21.8953 162.62 19.954C162.655 18.914 162.672 18.2293 162.672 17.9C162.672 17.5707 162.655 16.886 162.62 15.846C162.551 13.9047 162.048 12.466 161.112 11.53C160.176 10.5767 158.937 10.1 157.394 10.1C155.851 10.1 154.612 10.5767 153.676 11.53C152.74 12.466 152.237 13.9047 152.168 15.846C152.151 16.366 152.142 17.0507 152.142 17.9C152.142 18.7493 152.151 19.434 152.168 19.954C152.237 21.8953 152.731 23.3427 153.65 24.296C154.586 25.232 155.834 25.7 157.394 25.7ZM179.419 27C179.245 27 179.107 26.948 179.003 26.844C178.899 26.74 178.847 26.6013 178.847 26.428V9.398C178.847 9.22467 178.899 9.086 179.003 8.982C179.107 8.86067 179.245 8.8 179.419 8.8H185.477C187.349 8.8 188.813 9.242 189.871 10.126C190.928 11.01 191.457 12.3187 191.457 14.052C191.457 15.4213 191.119 16.5307 190.443 17.38C189.767 18.212 188.796 18.7753 187.531 19.07L191.717 26.194C191.769 26.298 191.795 26.3933 191.795 26.48C191.795 26.6187 191.743 26.74 191.639 26.844C191.535 26.948 191.413 27 191.275 27H190.963C190.703 27 190.503 26.948 190.365 26.844C190.243 26.7227 190.113 26.5407 189.975 26.298L185.841 19.304H180.485V26.428C180.485 26.6013 180.424 26.74 180.303 26.844C180.199 26.948 180.06 27 179.887 27H179.419ZM185.347 17.744C186.855 17.744 187.973 17.4407 188.701 16.834C189.446 16.21 189.819 15.2827 189.819 14.052C189.819 12.8213 189.446 11.9027 188.701 11.296C187.973 10.672 186.855 10.36 185.347 10.36H180.485V17.744H185.347ZM211.338 27.26C209.986 27.26 208.807 27.0433 207.802 26.61C206.814 26.1593 206.051 25.5787 205.514 24.868C204.994 24.1573 204.716 23.3947 204.682 22.58C204.682 22.4413 204.734 22.32 204.838 22.216C204.942 22.112 205.072 22.06 205.228 22.06H205.748C206.06 22.06 206.25 22.2333 206.32 22.58C206.441 23.412 206.918 24.14 207.75 24.764C208.582 25.388 209.778 25.7 211.338 25.7C212.984 25.7 214.206 25.4053 215.004 24.816C215.818 24.2093 216.226 23.3687 216.226 22.294C216.226 21.6353 216.026 21.098 215.628 20.682C215.246 20.2487 214.683 19.876 213.938 19.564C213.192 19.2347 212.066 18.8273 210.558 18.342C209.223 17.9087 208.174 17.484 207.412 17.068C206.666 16.652 206.112 16.1407 205.748 15.534C205.384 14.9273 205.202 14.156 205.202 13.22C205.202 12.336 205.436 11.5387 205.904 10.828C206.389 10.1173 207.082 9.56267 207.984 9.164C208.885 8.748 209.96 8.54 211.208 8.54C212.49 8.54 213.591 8.774 214.51 9.242C215.428 9.69267 216.122 10.2733 216.59 10.984C217.058 11.6773 217.309 12.3793 217.344 13.09C217.344 13.2287 217.292 13.35 217.188 13.454C217.101 13.558 216.971 13.61 216.798 13.61H216.278C216.156 13.61 216.035 13.5753 215.914 13.506C215.792 13.4193 215.723 13.2807 215.706 13.09C215.602 12.2233 215.134 11.5127 214.302 10.958C213.487 10.386 212.456 10.1 211.208 10.1C209.873 10.1 208.807 10.36 208.01 10.88C207.23 11.4 206.84 12.18 206.84 13.22C206.84 13.896 207.013 14.4593 207.36 14.91C207.724 15.3433 208.261 15.7247 208.972 16.054C209.682 16.366 210.731 16.7473 212.118 17.198C213.539 17.6487 214.648 18.082 215.446 18.498C216.243 18.914 216.841 19.4167 217.24 20.006C217.656 20.5953 217.864 21.358 217.864 22.294C217.864 23.854 217.283 25.076 216.122 25.96C214.96 26.8267 213.366 27.26 211.338 27.26Z" fill="#B1B1B1"/>
+            </svg>
     
+    
+            <ul class="header__navMenu">
+                <li class="header__navMenu-item"><a class='c-link' href="">Посмотреть каталог </a></li>
+                <li class="header__navMenu-item"><a class='c-link' href="">Сертификаты ЕАС </a></li>
+                <li class="header__navMenu-item"><a href="">
+                    <span class="c-link">+7 (000) 700-00-00</span>
+                    
+                    <svg class="header__phoneIcon c-icon-white" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 14.5C30.3 6.4 23.7 0 15.5 0C7.4 0 0.8 6.3 0.5 14.3C0.5 14.5 0.5 14.7 0.5 15C0.5 17.8 1.3 20.5 2.7 22.7L0 30.7L8.3 28.1C10.5 29.3 12.9 30 15.6 30C23.9 30 30.6 23.3 30.6 15.1C30.5 14.7 30.5 14.6 30.5 14.5ZM15.4 27.4C12.8 27.4 10.4 26.6 8.4 25.3L3.5 26.8L5.1 22.1C3.6 20 2.7 17.5 2.7 14.7C2.7 14.3 2.7 13.9 2.8 13.5C3.4 7.2 8.8 2.2 15.4 2.2C22 2.2 27.5 7.3 28 13.8C28 14.1 28 14.4 28 14.8C28.1 21.8 22.4 27.4 15.4 27.4Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3002 17.8999C21.9002 17.6999 20.1002 16.7999 19.8002 16.6999C19.5002 16.5999 19.2002 16.4999 19.0002 16.8999C18.8002 17.2999 18.0002 18.0999 17.8002 18.2999C17.6002 18.4999 17.4002 18.5999 17.0002 18.3999C16.6002 18.1999 15.4002 17.7999 14.0002 16.5999C12.9002 15.5999 12.2002 14.3999 12.0002 14.0999C11.8002 13.6999 12.0002 13.4999 12.2002 13.3999C12.4002 13.1999 12.6002 12.9999 12.8002 12.7999C12.8002 12.6999 12.9002 12.6999 12.9002 12.5999C13.0002 12.4999 13.0002 12.2999 13.1002 12.1999C13.2002 11.9999 13.2002 11.6999 13.1002 11.5999C13.0002 11.4999 12.3002 9.59986 12.0002 8.89986C11.7002 8.19986 11.4002 8.29986 11.2002 8.29986C11.0002 8.29986 10.7002 8.29986 10.5002 8.29986C10.3002 8.29986 9.90019 8.39986 9.50019 8.79986C9.20019 9.19986 8.2002 10.0999 8.2002 11.8999C8.2002 12.2999 8.30019 12.6999 8.40019 13.0999C8.80019 14.3999 9.6002 15.3999 9.7002 15.5999C9.9002 15.7999 12.2002 19.6999 16.0002 21.0999C19.8002 22.5999 19.8002 22.0999 20.4002 21.9999C21.1002 21.8999 22.6002 21.0999 22.9002 20.2999C23.2002 19.3999 23.2002 18.6999 23.1002 18.5999C22.9002 18.1999 22.7002 18.0999 22.3002 17.8999Z" fill="white"/>
+                    </svg>
+                    <div class="telegramIcon-wrap c-icon-white"><i class="icon-telegram c-icon-white"></i></div>  </a></li>
+                    <div class="header__popUp-container">
+                        <div class="header__popUp-title">           
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="21.5" stroke="white" stroke-width="3"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M31.7356 26.8549C31.1473 26.5664 28.5002 25.2682 28.059 25.124C27.6179 24.9797 27.1767 24.8355 26.8826 25.4125C26.5884 25.9894 25.4119 27.1434 25.1178 27.4319C24.8237 27.7204 24.5296 27.8647 23.9413 27.5762C23.3531 27.2877 21.5884 26.7107 19.5295 24.9797C17.9119 23.5372 16.8824 21.8063 16.5883 21.3735C16.2942 20.7965 16.5883 20.508 16.8824 20.3638C17.1766 20.0753 17.4707 19.7868 17.7648 19.4983C17.7648 19.354 17.9119 19.354 17.9119 19.2098C18.0589 19.0655 18.0589 18.777 18.206 18.6328C18.353 18.3443 18.353 17.9116 18.206 17.7673C18.0589 17.6231 17.0295 14.8823 16.5883 13.8726C16.1471 12.8629 15.7059 13.0071 15.4118 13.0071C15.1177 13.0071 14.6765 13.0071 14.3824 13.0071C14.0883 13.0071 13.5 13.1514 12.9118 13.7284C12.4706 14.3054 11 15.6036 11 18.2001C11 18.777 11.1471 19.354 11.2941 19.931C11.8824 21.8063 13.0589 23.2487 13.2059 23.5372C13.5 23.8257 16.8824 29.4514 22.4707 31.4709C28.059 33.6346 28.059 32.9134 28.9414 32.7691C29.9708 32.6249 32.1767 31.4709 32.6179 30.3169C33.0591 29.0187 33.0591 28.0089 32.912 27.8647C32.6179 27.2877 32.3238 27.1434 31.7356 26.8549Z" fill="white"/>
+                            </svg>
+                        </div>
+        
+                        <div class="header__popUp-content">
+                            <div class="header__popUp-item">
+                                <i class="icon icon-phone"></i>
+                                <a class="header__popUp-itemTitle">+7 (000) 700-00-00 </a>
+                            </div>
+                            <div class="header__popUp-item">
+                                <i class="icon icon-telegram"></i>
+                                <a class="header__popUp-itemTitle">Telegram</a>
+                            </div>
+                            <div class="header__popUp-item">
+                                <i class="icon icon-whatsapp"></i>
+                                <a class="header__popUp-itemTitle">WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+            </ul>
+
+    
+            <a href="#feedbackForm" class="c-btn header__btn navMenu__anchor">Оставить заявку</a>
+        </div>
+    </div>
+
+    <div class="mainScreen">
+        <div class="container mainScreen-title__content">
+            <p class="c-h1 mainScreen-title">
+                Противопожарные деревянные двери
+            </p>
+            <p class="c-p1 mainScreen-description">
+                Прошли сертификацию пожаростойкости
+                &laquo;ПОЖТЕСТ&raquo; ФГБУ ВНИИПО МЧС России.
+                Предел огнестойкости дверей EI-30 и&nbsp;EI-60.
+            </p>
+
+            <a href="#feedbackForm" class="c-btn mainScreen__btn navMenu__anchor">Оставить заявку</a>
+        </div>
+    </div>
+
+    <div class="doorExample container">
+        <div class="doorExample-column">
+            <div class="doorExample-titleBlock">
+                <p class="c-h2 doorExample-title">Сделаем однопольные и&nbsp;двупольные двери</p>
+                <p class="c-p2 doorExample-description">Для стандартного проёма изготовим двери с&nbsp;одним полотном. Для широкого&nbsp;&mdash; двупольные с&nbsp;дополнительной створкой.</p>
+                <div class="doorExample-titleBlock-imgBlock">
+                    <div class="doorExample-titleBlock-imgContent">
+                        <p class="c-p3">
+                            Однопольная противопожарная дверь
+                        </p>
+                        <p class="c-p3">
+                            EI-30 от 26 300 ₽,
+                        </p>
+                        <p class="c-p3">
+                            EI-60 от 30 700 ₽.
+                        </p>
+                    </div>
+                    <img src="./img/doorExample-sm.jpg" alt="">
+                </div>
+            </div>
+            <div class="doorExample-factoidBlock">
+                <div class="doorExample-factoidBlock-content">
+                    <p class="c-h2 doorExample-factoidBlock-title">Anti-panic</p>
+                    <p class="c-p2 doorExample-factoidBlock-description">При пожаре дверь смогут открыть нажатием на&nbsp;специальную ручку. Даже если дверь закрыта на&nbsp;замок.</p>
+                </div> 
+                <div class="doorExample-factoidBlock-imgBlock">
+                    <img src="./img/doorExample-factoid.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="doorExample-column">
+            <div class="doorExample-specificationBlock">
+                <p class="c-h3 doorExample-specificationBlock-title">С&nbsp;деревянной и&nbsp;стальной коробкой</p>
+                <p class="c-p2 doorExample-specificationBlock-description">Для дверей с&nbsp;огнестойкостью EI-30 предложим деревянный короб из&nbsp;массива. Для дверей с&nbsp;показателем огнестойкости EI-60&nbsp;&mdash; деревянный или стальной.</p>
+            </div>
+            <div class="doorExample-specificationBlock">
+                <p class="c-h3 doorExample-specificationBlock-title">В классическом и современном стиле                </p>
+                <p class="c-p2 doorExample-specificationBlock-description">Подберём модели со&nbsp;строгой фрезеровкой для классического интерьера. С&nbsp;минималистичным дизайном или хаотичными линиями&nbsp;&mdash; для современного.</p>
+            </div>
+            
+            <img class="doorExample-bigImg" src="./img/doorExample-big.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="glass-wrapper">
+        <div class="glass container">
+            <img class="glass__mainImg" src="./img/pic_door-render.png" alt="">
+
+            <div class="glass__content">
+                <div class="glass__content_titleBlock">
+                    <p class="c-h2 glass__content-title">Дополним дверь огнестойким стеклом от&nbsp;AGC Glass</p>
+                    <p class="c-p2 glass__content-description">Используем стекло Pyrobel. Оно состоит из&nbsp;нескольких расширяющихся слоёв. В&nbsp;случае пожара эти слои меняют свои физические свойства и&nbsp;превращаются в&nbsp;жёсткую непрозрачную конструкцию.</p>
+                </div>
+
+                <div class="glass__desktopFactoid">
+                    <p class="c-factoid glass__desktopFactoid-title">120</p>
+                    <p class="c-p2 glass__desktopFactoid-description">&deg;С&nbsp;&mdash; температура, при которой стекло становится непрозрачным</p>
+                </div>
+            </div>
+
+            <div class="glass__contoursBlock">
+                <img class="glass__contour" src="./img/doors_countours.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="interior container">
+        <div class="interior__content">
+            <div class="interior__titleBlock">
+                <p class="c-h2 interior-title">Изготовим отделку как у&nbsp;остальных дверей</p>
+                <p class="c-p2 interior-description">Подберём похожий или такой&nbsp;же дизайн как у&nbsp;других дверей в&nbsp;помещении. Противопожарная дверь дополнит интерьер и&nbsp;не&nbsp;будет выбиваться из&nbsp;общего стиля.</p>
+            </div>
+
+            <div class="interior__factoidBlock">
+                <div class="interior__factoid">
+                    <p class="c-factoid interior__factoid-title">34</p>
+                    <p class="c-p2 c-link interior__factoid-description">варианта исполнения дверных полотен</p>
+                </div>
+
+                <img src="./img/door_variants_countour.png" alt="">
+            </div>
+        </div>
+
+        <img src="./img/pic_interior.jpg" alt="">
+    </div>
+
+    <div class="color">
+        <div class="container color__container">
+            <div class="color__titleBlock">
+                <p class="c-h2 color-title">Покрасим дверь в&nbsp;нужный цвет</p>
+                <p class="c-p2 color-description">Мастера завода изготовят отделку из&nbsp;шпона или эмали. Выкрасят модель в&nbsp;любой оттенок палитры RAL и&nbsp;нанесут патину. Потом дверь покроют огнеупорным лаком.</p>
+
+                <div class="color__ralBlock">
+                    <img src="./img/ral.png" alt="" class="color__ralImg">
+                    <p class="c-p2 color__ralTitle">Цветовые решения палитры RAL</p>
+                </div>
+            </div>
+            <div class="color__contentBlock">
+                <p class="c-h3 color__contentBlock-title">Популярная отделка</p>
+                <div class="color__cardsContainer">
+                    <div class="color__card">
+                        <img src="./img/color-1.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">1</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-2.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">16</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-3.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">9010</span> | <span class="color__card-title">оп</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-4.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">9010</span> | <span class="color__card-title">оп</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-5.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">19</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-6.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">34</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-7.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">36</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-8.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">42</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-9.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">44</span> | <span class="color__card-title">шпон дуб</span></span>
+                    </div>
+                    <div class="color__card">
+                        <img src="./img/color-10.jpg" alt="" class="color__card-img">
+                        <span class="c-p3 color__card-text"><span class="color__card-number">капучино</span> | <span class="color__card-title">оп</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sizes container">
+        <div class="sizes__titleBlock">
+            <p class="c-h2 sizes-title">Подберём размер для вашего проёма</p>
+            <p class="c-p2 sizes-description">Создадим двери даже для нестандартных проёмов. Рассчитаем нужный размер и&nbsp;количество петель, чтобы конструкция была надёжной.</p>
+        </div>
+
+        <div class="sizes__imgContainer">
+            <div class="sizes__imgBlock">
+                <img src="./img/doorSize-1.jpg" alt="">
+                <p class="c-p2 sizes__imgBlock-horizontalSize"><span>700–1150 мм</span></p>
+                <p class="c-p2 sizes__imgBlock-verticalSize"><span>1600–2650 мм</span></p>
+            </div>
+            <div class="sizes__imgBlock">
+                <img src="./img/doorSize-2.jpg" alt="">
+                <p class="c-p2 sizes__imgBlock-horizontalSize"><span>1000–2100 мм</span></p>
+                <p class="c-p2 sizes__imgBlock-verticalSize"><span>1600–2650 мм</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about container">
+        <div class="about__titleBlock">
+            <p class="c-h2 about__titleBlock-title">О нас</p>
+            <p class="c-p2 about__titleBlock-description">Изготавливаем входные и&nbsp;межкомнатные двери для отелей, медицинских и&nbsp;учебных заведений, торговых центров и&nbsp;других общественных зданий. Наш инженер работает над каждым проектом.</p>
+
+            <div class="about__factoidBlock">
+                <p class="c-factoid about__factoidBlock-number">21</p>
+                <p class="c-p2 about__factoidBlock-description">год занимаемся производством дверей</p>
+            </div>
+        </div>
+        <div class="about__videoBlock"></div>
+    </div>
+
+    <div class="sertification">
+        <div class="container">
+            <div class="sertification__titleContainer">
+                <p class="c-h2 sertification-title">Сертификаты</p>
+                <p class="c-p2 sertification-description">Все двери соответствуют требованиям пожарной безопасности. Каждая защитная конструкция прошла сертификацию в&nbsp;&laquo;ПОЖТЕСТ&raquo; ФГБУ ВНИИПО МЧС России.</p>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="loop-wrapper">
+                    <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M76.472 72.3142C77.6202 73.4624 77.6202 75.324 76.472 76.4722C75.3238 77.6204 73.4621 77.6204 72.3139 76.4722L58.2011 62.3594C57.0529 61.2112 57.0529 59.3496 58.2011 58.2014C59.3493 57.0531 61.2109 57.0531 62.3591 58.2014L76.472 72.3142ZM32.0545 63.2205C14.8421 63.2205 0.888672 49.2671 0.888672 32.0547C0.888672 14.8423 14.8421 0.888916 32.0545 0.888916C49.2669 0.888916 63.2203 14.8423 63.2203 32.0547C63.2203 49.2671 49.2669 63.2205 32.0545 63.2205ZM32.0545 57.3402C46.0193 57.3402 57.3399 46.0195 57.3399 32.0547C57.3399 18.09 46.0193 6.76926 32.0545 6.76926C18.0897 6.76926 6.76901 18.09 6.76901 32.0547C6.76901 46.0195 18.0897 57.3402 32.0545 57.3402ZM17.5496 29.7026C17.5496 30.7851 16.6721 31.6627 15.5895 31.6627C14.507 31.6627 13.6294 30.7851 13.6294 29.7026C13.6294 20.8258 20.8255 13.6297 29.7023 13.6297C30.7849 13.6297 31.6625 14.5072 31.6625 15.5898C31.6625 16.6723 30.7849 17.5499 29.7023 17.5499C22.9906 17.5499 17.5496 22.9908 17.5496 29.7026Z" fill="#A87E40"/>
+                    </svg>
+                </div>
+                <div class="swiper-container">
+    
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/sertification-1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sertification-2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sertification-3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sertification-4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sertification-5.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sertification-6.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/sertification-7.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container footer__container">
+            <div class="footer__contentBlock">
+                <div class="footer__titleBlock">
+                    <p class="c-h2 footer__titleBlock-title">Заказчикам</p>
+                    <p class="c-p2 footer__titleBlock-description">Предложим гибкие условия сотрудничества, быструю доставку и&nbsp;сервисное обслуживание.</p>
+                </div>
+
+                <form id="feedbackForm" class="feedbackForm__container">
+                    <div class="feedbackForm__inputBlock">
+                        <label class="c-p2 feedbackForm__inputBlock-label">Имя*</label>
+                        <input type="text" class="c-input">
+                    </div>
+                    <div class="feedbackForm__inputBlock">
+                        <label class="c-p2 feedbackForm__inputBlock-label">Номер телефона*</label>
+                        <input type="text" class="c-input form__phone">
+                    </div>
+                    <div class="feedbackForm__inputBlock feedbackForm__inputBlock-imgInput">
+                        <label class="c-p2 feedbackForm__inputBlock-label">Фото объекта</label>
+                        <input type="file" id="file" name='file' multiple>
+                       
+                        <span class="c-p4 feedbackForm__info">GIF, JPEG или PNG размером до 20 Мб</span>
+                    </div>
+                    <div class="feedbackForm__inputBlock">
+                        <label class="c-p2 feedbackForm__inputBlock-label">Комментарий</label>
+                        <textarea type="text" class="c-input"></textarea>
+                    </div>
+                    <div class="feedbackForm__inputBlock feedbackForm__inputBlock-submit">
+                        <button class="c-btn feedbackForm__inputBlock-submitBtn">
+                            отправить заявку
+                        </button>
+                        <span class="c-p4 feedbackForm__info">*Имя и телефон обязательны</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="footer__contactsBlock">
+                <a  href="mailto:vist-market@mail.ru" class="c-h2 footer__contactsBlock-title">vist-market@mail.ru</a>
+                <p class="c-p2 footer___contactsBlock-description">Отправляйте на&nbsp;почту предложения по&nbsp;сотрудничеству или комментарии о&nbsp;продукте.</p>
+                <img src="./img/footer-img.jpg" alt="" class="footer__contactsBlock-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyrightBlock">
+        <p class="copyrightBlock-title c-p4">© EX-DOORS 2021</p>
+    </div>
+
+    <div class="doorsCatalog__popUp-container">
+        <div class="doorsCatalog__popUp-wrap">
+            <img src="./img/doorsCatalog.jpg" alt="">
+            <p class="doorsCatalog__popUp-close c-link">
+                <span >закрыть</span>
+                <i class="icon-cross c-link"></i>
+            </p>
+        </div>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var elements = document.getElementsByClassName('form__phone');
+        for (var i = 0; i < elements.length; i++) {
+          new IMask(elements[i], {
+            mask: '+{7} (000) 000-00-00',
+            lazy: false
+          });
+        }
+        $(document).ready(function(){
+        $(".navMenu__anchor").on("click", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top - 100}, 1500);
+            });
+        });
+    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
