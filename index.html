@@ -275,7 +275,6 @@
                     </svg>
                 </div>
                 <div class="swiper-container">
-    
                     <div class="swiper-wrapper">
                       <div class="swiper-slide"><img src="./img/sertification-1.jpg" alt=""></div>
                       <div class="swiper-slide"><img src="./img/sertification-2.jpg" alt=""></div>
@@ -285,6 +284,25 @@
                       <div class="swiper-slide"><img src="./img/sertification-6.jpg" alt=""></div>
                       <div class="swiper-slide"><img src="./img/sertification-7.jpg" alt=""></div>
                     </div>
+                </div>
+                <div class="slider-pagination">
+                    
+                    <svg class="slider-prev" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.292893 28.1529C-0.0976295 27.7624 -0.0976296 27.1292 0.292892 26.7387L6.65685 20.3747C7.04738 19.9842 7.68054 19.9842 8.07107 20.3747C8.46159 20.7653 8.46159 21.3984 8.07107 21.789L2.41422 27.4458L8.07107 33.1027C8.46159 33.4932 8.46159 34.1263 8.07107 34.5169C7.68054 34.9074 7.04738 34.9074 6.65685 34.5169L0.292893 28.1529ZM55 28.4458L1 28.4458L1 26.4458L55 26.4458L55 28.4458Z" fill="white"/>
+                    </svg>
+                    <span class="slider-numbContainer">
+                        <span class="slider-activeNumb">1</span> / 7
+                    </span>
+                    <svg class="slider-next" width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M54.9005 28.1529C55.291 27.7624 55.291 27.1292 54.9005 26.7387L48.5365 20.3747C48.146 19.9842 47.5128 19.9842 47.1223 20.3747C46.7318 20.7653 46.7318 21.3984 47.1223 21.789L52.7791 27.4458L47.1223 33.1027C46.7318 33.4932 46.7318 34.1263 47.1223 34.5169C47.5128 34.9074 48.146 34.9074 48.5365 34.5169L54.9005 28.1529ZM0.193359 28.4458L54.1934 28.4458L54.1934 26.4458L0.193359 26.4458L0.193359 28.4458Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="slider__close-wrap">
+
+                    <p class="slider__close-container c-link">
+                        <span >закрыть</span>
+                        <i class="icon-cross c-link"></i>
+                    </p>
                 </div>
             </div>
         </div>
@@ -301,7 +319,7 @@
                 <form id="feedbackForm" class="feedbackForm__container">
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Имя*</label>
-                        <input type="text" class="c-input">
+                        <input placeholder='Ваше имя' type="text" class="c-input">
                     </div>
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Номер телефона*</label>
@@ -315,7 +333,7 @@
                     </div>
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Комментарий</label>
-                        <textarea type="text" class="c-input"></textarea>
+                        <textarea placeholder="Расскажите об объекте" type="text" class="c-input"></textarea>
                     </div>
                     <div class="feedbackForm__inputBlock feedbackForm__inputBlock-submit">
                         <button class="c-btn feedbackForm__inputBlock-submitBtn">

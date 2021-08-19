@@ -5,10 +5,13 @@ const catalogPopup = document.querySelector('.doorsCatalog__popUp-container');
 const closeCatalogPopupBtn = document.querySelector('.doorsCatalog__popUp-close');
 const sertificationSwiper = document.querySelector('.slider-wrapper');
 const sertificationLoop = document.querySelector('.loop-wrapper');
+const slideNext = document.querySelector('.slider-next');
+const slidePrev = document.querySelector('.slider-prev');
+const sliderActiveNumb = document.querySelector('.slider-activeNumb');
+const closeSlider = document.querySelector('.slider__close-container');
 
 
 menuBtn.addEventListener('click', () => {
-
     menuBtn.classList.toggle('header__popUp-activeContainer');
 })
 
@@ -27,4 +30,29 @@ closeCatalogPopupBtn.addEventListener('click', () => {
 sertificationLoop.addEventListener('click', () => {
     sertificationSwiper.classList.add('slider-wrapper-popup');
     document.querySelector('body').style.overflow = 'hidden';
+})
+
+closeSlider.addEventListener('click', () => {
+    sertificationSwiper.classList.remove('slider-wrapper-popup');
+    document.querySelector('body').style.overflow = 'initial';
+})
+
+slideNext.addEventListener('click', () => {
+    swiper.slideNext();
+    updateActiveNumb();
+})
+
+slidePrev.addEventListener('click', () => {
+    swiper.slidePrev();
+    updateActiveNumb();
+})
+
+function updateActiveNumb() {
+    console.log(swiper.activeIndex + 1)
+    sliderActiveNumb.innerHTML = swiper.activeIndex + 1;
+}
+
+let swiper = new Swiper('.swiper-container', {
+    resizeObserver: true,
+    on: {transitionEnd: updateActiveNumb},
 })
