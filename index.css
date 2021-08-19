@@ -709,7 +709,9 @@
 
 .doorsCatalog__popUp-wrap > img {
     padding: 44px 0 90px 0;
-    width: 100%;
+    width: max-content;
+    height: 100vh;
+    margin: auto;
 }
 
 .slider__close-container,
