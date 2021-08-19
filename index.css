@@ -1087,6 +1087,14 @@ input[type='file'] {
         width: 160px;
         height: 160px;
     }
+
+    .feedbackForm__inputBlock .c-error {
+        left: 169px;
+    }
+
+    .feedbackForm__inputBlock-submitBtn {
+        margin-left: 169px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -1437,11 +1445,24 @@ input[type='file'] {
     .sertification-description {
         width: 333px;
     }
+
+    
+    .feedbackForm__inputBlock .c-error {
+        left: 169px;
+    }
+
+    .feedbackForm__inputBlock-submitBtn {
+        margin-left: 169px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         width: 330px;
+    }
+
+    .feedbackForm__inputBlock .c-error {
+        left: 0;
     }
 
     .slider-pagination {
