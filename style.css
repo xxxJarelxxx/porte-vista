@@ -164,6 +164,19 @@ input:focus {
     border-bottom: 1px solid #FF7777;
 }
 
+.c-error {
+    display: none;
+    font-size: 12px;
+    line-height: 120%;
+    font-family: "PrataReg";
+    letter-spacing: 0.015em;
+    color: #FF7777;
+}
+
+.c-input-error ~ .c-error {
+    display: block;
+}
+
 @media screen and (max-width: 1440px) {
     .c-h1 {
         font-size: 46px;

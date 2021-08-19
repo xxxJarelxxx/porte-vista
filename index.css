@@ -3,8 +3,26 @@
     background: #202020;
 }
 
-.form__phone {
-    color: rgba(112, 118, 138, 0.5);
+.input-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #202020;
+    width: 144px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.input-file:hover {
+    background: #C4C4C4;
+}
+
+.input-file:active {
+    background: #C4C4C4;
+}
+
+input[type='file'] {
+    display: none;
 }
 
 .form__phone:focus {
@@ -618,6 +636,13 @@
 
 .feedbackForm__inputBlock {
     display: flex;
+    position: relative;
+}
+
+.feedbackForm__inputBlock .c-error {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 175px;
 }
 
 .feedbackForm__inputBlock > .feedbackForm__inputBlock-label {
@@ -630,6 +655,7 @@
     color: #202020;
 }
 
+.form__success-btn:hover,
 .feedbackForm__inputBlock-submitBtn:hover {
     background: #A87E40;
     color: rgba(255, 255, 255, 0.7);
@@ -683,6 +709,7 @@
 }
 
 
+.form__popUp-container,
 .doorsCatalog__popUp-container {
     position: fixed;
     top: 0;
@@ -714,6 +741,15 @@
     margin: auto;
 }
 
+.form__success-content {
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__popUp-close,
 .slider__close-container,
 .doorsCatalog__popUp-close {
     width: 80px;
@@ -732,6 +768,27 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+.form__success-description,
+.form__success-title {
+    font-family: "PrataReg";
+}
+
+.form__success-title {
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.form__success-description {
+    font-size: 17px;
+    line-height: 130%;
+    margin-top: 20px;
+}
+
+.form__success-btn {
+    margin-top: 40px;
+    background: #B1B1B1;
 }
 
 .header__popUp-container,

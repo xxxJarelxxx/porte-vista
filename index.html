@@ -319,16 +319,20 @@
                 <form id="feedbackForm" class="feedbackForm__container">
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Имя*</label>
-                        <input placeholder='Ваше имя' type="text" class="c-input">
+                        <input placeholder='Ваше имя' type="text" class="c-input feedbackForm__inputBlock-name">
+                        <p class="c-error">указано неверное значение</p>
                     </div>
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Номер телефона*</label>
-                        <input type="text" class="c-input form__phone">
+                        <input type="text" class="c-input form__phone feedbackForm__inputBlock-phone">
+                        <p class="c-error">указано неверное значение</p>
                     </div>
                     <div class="feedbackForm__inputBlock feedbackForm__inputBlock-imgInput">
                         <label class="c-p2 feedbackForm__inputBlock-label">Фото объекта</label>
                         <input type="file" id="file" name='file' multiple>
-                       
+                        <label class="input-file c-p3" for="file">
+                            Загрузить
+                        </label>
                         <span class="c-p4 feedbackForm__info">GIF, JPEG или PNG размером до 20 Мб</span>
                     </div>
                     <div class="feedbackForm__inputBlock">
@@ -360,6 +364,21 @@
         <div class="doorsCatalog__popUp-wrap">
             <img src="./img/doorsCatalog.jpg" alt="">
             <p class="doorsCatalog__popUp-close c-link">
+                <span >закрыть</span>
+                <i class="icon-cross c-link"></i>
+            </p>
+        </div>
+
+        
+    </div>
+    <div class="form__popUp-container">
+        <div class="doorsCatalog__popUp-wrap">
+            <div class="form__success-content">
+                <p class="form__success-title">Ваша заявка отправлена</p>
+                <p class="form__success-description">Мы свяжемся с вами в ближайшее время.</p>
+                <button class="c-btn form__success-btn">понятно</button>
+            </div>
+            <p class="form__popUp-close c-link">
                 <span >закрыть</span>
                 <i class="icon-cross c-link"></i>
             </p>
