@@ -732,6 +732,7 @@
     justify-content: flex-end;
 }
 
+.header__popUp-container,
 .slider__close-container {
     display: none;
 }
