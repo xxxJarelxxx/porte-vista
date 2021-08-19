@@ -1706,5 +1706,51 @@ input[type='file'] {
     .footer__titleBlock-description {
         width: 100%;
     }
+
+    .sizes__imgBlock:nth-child(2) > img {
+        width: 264px;
+        height: 334px;
+    }
+
+    .sizes__imgBlock:nth-child(1) > img {
+        width: 147px;
+        height: 334px;
+    }
+
+    .sizes__imgBlock-horizontalSize {
+        width: 147px;
+        left: calc(50% - 91px);
+    }
+
+    .sizes__imgBlock:nth-child(2) .sizes__imgBlock-horizontalSize {
+        width: 264px;
+        left: calc(50% - 32px);
+    }
+
+    .sizes__imgBlock-verticalSize {
+        width: 334px;
+        right: -15px;
+    }
+
+    .sizes__imgBlock:nth-child(2) .sizes__imgBlock-verticalSize {
+        right: -133px;
+    }
+
+    .sizes__imgBlock {
+        padding-right: 0;
+    }
+
+    .about__factoidBlock {
+        margin-top: 20px;
+    }
+
+    .interior__factoidBlock > img {
+        width: 177px;
+        height: 138px;
+    }
+
+    .sertification__titleContainer > * {
+        width: 100%;
+    }
 }
 
