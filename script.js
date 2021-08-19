@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector('.header__popUp-container');
-
+const body = document.querySelector('body')
 const factoidBtn = document.querySelector('.interior__factoid-description');
 const catalogPopup = document.querySelector('.doorsCatalog__popUp-container');
 const closeCatalogPopupBtn = document.querySelector('.doorsCatalog__popUp-close');
@@ -21,24 +21,26 @@ menuBtn.addEventListener('click', () => {
 
 factoidBtn.addEventListener('click', () => {
     if (window.screen.width > 768) {
-        catalogPopup.style.display = 'block'
+        catalogPopup.style.display = 'block';
+        body.style.overflow = 'hidden';
     }
 })
 
 closeCatalogPopupBtn.addEventListener('click', () => {
     if (window.screen.width > 768) {
         catalogPopup.style.display = 'none';
+        body.style.overflow = 'initial';
     }
 })
 
 sertificationLoop.addEventListener('click', () => {
     sertificationSwiper.classList.add('slider-wrapper-popup');
-    document.querySelector('body').style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
 })
 
 closeSlider.addEventListener('click', () => {
     sertificationSwiper.classList.remove('slider-wrapper-popup');
-    document.querySelector('body').style.overflow = 'initial';
+    body.style.overflow = 'initial';
 })
 
 slideNext.addEventListener('click', () => {
