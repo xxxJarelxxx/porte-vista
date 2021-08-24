@@ -13,6 +13,19 @@
     cursor: pointer;
 }
 
+.about__videoBlock > video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.doorExample-imgContent {
+    color: #fff;
+}
+
+.doorExample-imgBlock {
+    position: relative;
+}
+
 .input-file:hover {
     background: #C4C4C4;
 }
@@ -132,11 +145,18 @@ input[type='file'] {
     height: 371px;
 }
 
+.doorExample-imgContent,
 .doorExample-titleBlock-imgContent {
     position: absolute;
     bottom: 17px;
     right: 11px;
     width: 176px;
+}
+
+.doorExample-imgContent {
+    width: 284px;
+    right: 37px;
+    bottom: 14px;
 }
 
 .doorExample-title,
@@ -215,6 +235,8 @@ input[type='file'] {
 
 .glass__desktopFactoid {
     width: 167px;
+    position: relative;
+    left: 10px;
 }
 
 .glass__contoursBlock {
@@ -270,10 +292,20 @@ input[type='file'] {
 .interior__factoidBlock > img {
     width: 254px;
     height: 207px;
+    position: relative;
+    top: 10px;
 }
 
 .interior__factoid-title {
     margin-bottom: -30px;
+}
+
+.footer__contactsBlock-img {
+    margin-top: 36px;
+}
+
+.footer___contactsBlock-description {
+    margin-top: 24px;
 }
 
 .color {
@@ -374,6 +406,10 @@ input[type='file'] {
     margin-left: 145px;
 }
 
+.doorsSwiper-container {
+    display: none!important;
+}
+
 .sizes__imgBlock-verticalSize,
 .sizes__imgBlock-horizontalSize {
     background: #fff;
@@ -434,7 +470,6 @@ input[type='file'] {
 .about__videoBlock {
     width: 859px;
     height: 480px;
-    background: #000;
 }
 
 .about__titleBlock {
@@ -494,6 +529,11 @@ input[type='file'] {
     position: absolute;
     top: 162px;
     right: 258px;
+}
+
+.slider-prev,
+.slider-next {
+    user-select: none;
 }
 
 .loop-wrapper {
@@ -643,6 +683,37 @@ input[type='file'] {
     position: absolute;
     top: calc(100% + 3px);
     left: 175px;
+}
+
+.c-error ~ .icon-cross {
+    display: none;
+}
+
+.c-error {
+    font-family: 'Montserrat';
+}
+
+.c-input-error ~ .c-error ~ .icon-cross {
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 11px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #FF7777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-input-error ~ .c-error ~ .icon-cross:before {
+    color: #fff;
+}
+
+.feedbackForm__inputBlock {
+    width: max-content;
 }
 
 .feedbackForm__inputBlock > .feedbackForm__inputBlock-label {
@@ -807,6 +878,14 @@ input[type='file'] {
         width: 1200px;
     }
 
+    .doorExample-factoidBlock {
+        margin-top: 55px;
+    }
+
+    .doorExample-titleBlock-imgBlock {
+        margin-top: 30px;
+    }
+
     .slider-wrapper {
         top: 120px;
         right: 275px;
@@ -905,9 +984,15 @@ input[type='file'] {
     .doorExample-title, .doorExample-description {
         width: 370px;
     }
-
+    .doorExample-imgContent,
     .doorExample-titleBlock-imgContent {
         right: 18px;
+        bottom: 20px;
+    }
+
+    .doorExample-imgContent {
+        width: 259px;
+        right: 0;
         bottom: 20px;
     }
 
@@ -953,7 +1038,8 @@ input[type='file'] {
 
     .interior__factoidBlock > img {
         height: 170px;
-        width: 244px;
+        width: initial;
+        top: 8px;
     }
 
     .color {
@@ -1129,6 +1215,16 @@ input[type='file'] {
         width: max-content;
     }
 
+    .header__popUp-content::before {
+        content: ''; 
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        border: 40px solid transparent;
+        border-bottom: 20px solid #353434;
+        transform: translate(-50%, 0);
+    }
+
     .header__popUp-itemTitle {
         margin-left: 16px;
         font-family: "RubikLight";
@@ -1210,14 +1306,21 @@ input[type='file'] {
         width: 100%;
     }
 
+    .doorExample-imgContent,
     .doorExample-titleBlock-imgContent {
         right: 66px;
         bottom: 25px;
     }
 
+    .doorExample-imgContent {
+        width: 160px;
+        right: 48px;
+        bottom: 15px;
+    }
+
     .doorExample-titleBlock-imgBlock > img {
         width: 700px;
-        height: 437px;
+        height: initial;
     }
 
     .doorExample-factoidBlock {
@@ -1361,23 +1464,23 @@ input[type='file'] {
     .sizes__imgBlock-horizontalSize {
         width: 179px;
         height: 20px;
-        left: calc(50% - 75px);
+        left: calc(50% - 27px);
     }
 
     .sizes__imgBlock:nth-child(2) .sizes__imgBlock-horizontalSize {
         width: 322px;
-        left: calc(50% - 5px);
+        left: calc(50% - 25px);
     }
 
     .sizes__imgBlock-verticalSize {
         width: 407px;
-        right: -90px;
+        right: -171px;
         height: 20px;
         top: calc(50% - 25px);
     }
 
     .sizes__imgBlock:nth-child(2) .sizes__imgBlock-verticalSize {
-        right: -234px;
+        right: -171px;
     }
 
     .sizes__imgBlock {
@@ -1530,7 +1633,20 @@ input[type='file'] {
 
     .doorExample-titleBlock-imgBlock > img {
         width: 330px;
-        height: 206px;
+        height: initial;
+    }
+
+    .glass__desktopFactoid {
+        left: initial;
+    }
+
+    .input-file {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .interior__factoid {
+        width: 145px;
     }
 
     .doorExample-factoidBlock-content,
@@ -1657,9 +1773,16 @@ input[type='file'] {
         margin-top: 20px;
     }
 
+    .doorExample-imgContent,
     .doorExample-titleBlock-imgContent {
         width: 120px;
         right: 7px;
+        bottom: 10px;
+    }
+
+    .doorExample-imgContent {
+        width: 131px;
+        right: 23px;
         bottom: 10px;
     }
 
@@ -1724,10 +1847,16 @@ input[type='file'] {
 
     .header__popUp-activeContainer .header__popUp-content {
         top: 60px;
-        right: 0;
+        right: -15px;
         left: initial;
         padding: 30px 60px 30px 80px;
         transform: initial;
+    }
+
+    .header__popUp-content::before {
+        transform: none;
+        left: initial;
+        right: 0;
     }
 
     .footer__titleBlock-description {
@@ -1778,6 +1907,18 @@ input[type='file'] {
 
     .sertification__titleContainer > * {
         width: 100%;
+    }
+
+    .doorsSwiper-container {
+        display: block !important;
+    }
+
+    .glass__contour {
+        display: none !important;
+    }
+
+    .doorsSwiper-container img {
+        padding-right: 10px;
     }
 }
 

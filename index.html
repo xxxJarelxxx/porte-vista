@@ -107,6 +107,8 @@
                 </div> 
                 <div class="doorExample-factoidBlock-imgBlock">
                     <img src="./img/doorExample-factoid.jpg" alt="">
+                    <div class="doorExample-titleBlock-imgContent">
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,8 +122,14 @@
                 <p class="c-h3 doorExample-specificationBlock-title">В классическом и современном стиле                </p>
                 <p class="c-p2 doorExample-specificationBlock-description">Подберём модели со&nbsp;строгой фрезеровкой для классического интерьера. С&nbsp;минималистичным дизайном или хаотичными линиями&nbsp;&mdash; для современного.</p>
             </div>
-            
-            <img class="doorExample-bigImg" src="./img/doorExample-big.jpg" alt="">
+            <div class="doorExample-imgBlock">
+                <img class="doorExample-bigImg" src="./img/doorExample-big.jpg" alt="">
+                <div class="doorExample-imgContent">
+                    <p class="c-p3">
+                        Двупольная противопожарная дверь EI-30 от 38 100 ₽, EI-60 от 41 000 ₽.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -143,6 +151,15 @@
 
             <div class="glass__contoursBlock">
                 <img class="glass__contour" src="./img/doors_countours.png" alt="">
+                <div class="doorsSwiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/1_door.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/2_door.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/3_door.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/4_door.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/5_door.jpg" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -258,7 +275,9 @@
                 <p class="c-p2 about__factoidBlock-description">год занимаемся производством дверей</p>
             </div>
         </div>
-        <div class="about__videoBlock"></div>
+        <div class="about__videoBlock">
+            <video src="./video.mp4" controls></video>
+        </div>
     </div>
 
     <div id='certification' class="sertification">
@@ -321,11 +340,13 @@
                         <label class="c-p2 feedbackForm__inputBlock-label">Имя*</label>
                         <input placeholder='Ваше имя' type="text" class="c-input feedbackForm__inputBlock-name">
                         <p class="c-error">указано неверное значение</p>
+                        <i class="icon-cross"></i>
                     </div>
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Номер телефона*</label>
-                        <input type="text" class="c-input form__phone feedbackForm__inputBlock-phone">
-                        <p class="c-error">указано неверное значение</p>
+                        <input type="phone" class="c-input form__phone feedbackForm__inputBlock-phone">
+                        <p class="c-error">указано неверное значение </p>
+                        <i class="icon-cross"></i>
                     </div>
                     <div class="feedbackForm__inputBlock feedbackForm__inputBlock-imgInput">
                         <label class="c-p2 feedbackForm__inputBlock-label">Фото объекта</label>
@@ -337,7 +358,7 @@
                     </div>
                     <div class="feedbackForm__inputBlock">
                         <label class="c-p2 feedbackForm__inputBlock-label">Комментарий</label>
-                        <textarea placeholder="Расскажите об объекте" type="text" class="c-input"></textarea>
+                        <textarea placeholder="Расскажите об объекте" type="text" class="c-input c-p4"></textarea>
                     </div>
                     <div class="feedbackForm__inputBlock feedbackForm__inputBlock-submit">
                         <button class="c-btn feedbackForm__inputBlock-submitBtn">

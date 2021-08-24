@@ -15,11 +15,31 @@ const formSuccessBtn = document.querySelector('.form__success-btn');
 const successPopup = document.querySelector('.form__popUp-container');
 const nameInput = document.querySelector('.feedbackForm__inputBlock-name');
 
+
+document.querySelector('.form__phone').addEventListener('focusout', (e) => {
+    if (e.currentTarget.value == "+7 (___) ___-__-__") {
+        e.currentTarget.style.color =  "#B1B1B1";
+    } else {
+        e.currentTarget.style.color =  "#202020";
+    }
+})
+
+document.querySelector('.form__phone').addEventListener('focusin', (e) => {
+    e.currentTarget.style.color =  "#202020";
+})
+
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('header__popUp-activeContainer');
 })
 
 factoidBtn.addEventListener('click', () => {
+    if (window.screen.width > 768) {
+        catalogPopup.style.display = 'block';
+        body.style.overflow = 'hidden';
+    }
+})
+
+factoidBtn.addEventListener('touchstart', () => {
     if (window.screen.width > 768) {
         catalogPopup.style.display = 'block';
         body.style.overflow = 'hidden';
@@ -114,4 +134,9 @@ const isFormValidated = () => {
 let swiper = new Swiper('.swiper-container', {
     resizeObserver: true,
     on: {transitionEnd: updateActiveNumb},
+})
+
+let doorsSwiper = new Swiper('.doorsSwiper-container', {
+    slidesPerView: 3.3,
+    spaceBetween: 15,
 })
