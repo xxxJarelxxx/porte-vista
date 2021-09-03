@@ -16,6 +16,7 @@
 .about__videoBlock > video {
     max-width: 100%;
     max-height: 100%;
+    background: rgba(0, 0, 0, 0.692);
 }
 
 .doorExample-imgContent {
@@ -470,7 +471,6 @@ input[type='file'] {
 .about__videoBlock {
     width: 859px;
     height: 480px;
-    background: #000;
 }
 
 .about__titleBlock {
