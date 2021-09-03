@@ -53,6 +53,13 @@ closeCatalogPopupBtn.addEventListener('click', () => {
     }
 })
 
+closeCatalogPopupBtn.addEventListener('touchstart', () => {
+    if (window.screen.width >= 768) {
+        catalogPopup.style.display = 'none';
+        body.style.overflow = 'initial';
+    }
+})
+
 sertificationLoop.addEventListener('click', () => {
     sertificationSwiper.classList.add('slider-wrapper-popup');
     body.style.overflow = 'hidden';
