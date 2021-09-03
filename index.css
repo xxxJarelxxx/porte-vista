@@ -470,6 +470,7 @@ input[type='file'] {
 .about__videoBlock {
     width: 859px;
     height: 480px;
+    background: #000;
 }
 
 .about__titleBlock {
