@@ -38,6 +38,9 @@ factoidBtn.addEventListener('click', () => {
         body.style.overflow = 'hidden';
     }
 })
+var p = document.createElement("p");
+p.innerHTML = window.screen.width;
+factoidBtn.appendChild(p);
 
 factoidBtn.addEventListener('touchstart', () => {
     if (window.screen.width > 768) {
