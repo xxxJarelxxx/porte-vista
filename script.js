@@ -108,13 +108,13 @@ const updateActiveNumb = () => {
 
 const isFormValidated = () => {
     const phoneInput = document.querySelector('.feedbackForm__inputBlock-phone');
-
+    let isValidated = true;
     if (!nameInput.value.length) {
         if (!nameInput.classList.contains('c-input-error')) {
             nameInput.classList.add('c-input-error')
         }
 
-        return false;
+        isValidated = false;
     } else if (nameInput.classList.contains('c-input-error')) {
         nameInput.classList.remove('c-input-error')
     }
@@ -123,12 +123,12 @@ const isFormValidated = () => {
         if (!phoneInput.classList.contains('c-input-error')) {
             phoneInput.classList.add('c-input-error')
         }
-        return false;
+        isValidated = false;
     } else if (phoneInput.classList.contains('c-input-error')) {
         phoneInput.classList.remove('c-input-error')
     }
 
-    return true;
+    return isValidated;
 }
 
 let swiper = new Swiper('.swiper-container', {
